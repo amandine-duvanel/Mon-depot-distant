@@ -1,0 +1,91 @@
+
+/*Style de texte*/
+h1 {
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-size: 22pt;
+    color: black;
+    width: 100%;
+}
+
+h2{
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-size: 16pt;
+    color: black;
+}
+
+article {
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-size: 12pt;
+    color: black;
+
+}
+
+/*  la partie header du haut */
+
+header{
+    display: block
+}
+
+img.logo{
+    display: block;
+    float: left;
+}
+
+.slogan{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+/* la barre de navigation ET LE FOOTER*/
+
+ul{
+    list-style-type: none;
+    padding: 1%;
+    margin: 0.5% 0% 0.5% 0%;
+    background-color: black;
+}
+
+li {
+    display: inline;
+    background-color: black;
+    font : bold, underline;
+}
+
+
+a:link, a:visited {
+    color: white;
+    background-color: black;
+}
+
+
+/* l'image promo */
+.promo{
+    width: 100%;
+}
+
+
+/* les boites de la partie centrale */
+.pcentrale{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    }
+
+section.container{
+    display: flex;
+    width: 70%;
+    flex-flow: row wrap;
+     }
+
+
+    /*colonne de droite*/
+
+    .box{
+        background-color: grey;
+        width: 30%;
+        }
+
+    hr{
+        width: 100%;
+        }

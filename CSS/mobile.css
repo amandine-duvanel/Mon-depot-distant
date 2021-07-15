@@ -1,0 +1,67 @@
+/*redimensionner les polices*/
+
+        /*fixer la racine du doc html à 100%*/
+
+        html {
+        font-size: 100%;
+        }
+
+@media (max-width: 768px) {
+    h1{
+    font-size: 1.5rem;
+    }
+
+    h2{
+    font-size: 1rem;
+    }
+
+    p{
+    font-size: 0.8rem;
+    }   
+
+    li{
+    font-size: 0.8rem;
+    }
+
+
+/* cacher la colonne de droite*/
+
+    .box{
+        display: none;
+    }
+
+    section.container{
+        width: 100%;
+    }
+    
+
+/*mettre les menus en verticaux*/
+
+    li{
+    display: flex;
+    justify-content: center;  
+    line-height: 150%;
+    }
+
+
+/*Diminuer la taille de l'entete*/
+.entete{
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-between;
+}
+
+   .logo{
+        width:35%;
+        height: auto
+        border: 1px solid green;
+    }
+
+    .slogan{
+        font-size: 1.3rem;
+        justify-self: right;
+        border: 1px solid purple;
+
+    }
+
+}
