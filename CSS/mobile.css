@@ -9,10 +9,12 @@
 @media (max-width: 768px) {
     h1{
     font-size: 1.5rem;
+    margin: 0px;
     }
 
     h2{
     font-size: 1rem;
+    margin: 0px;
     }
 
     p{
@@ -47,21 +49,15 @@
 /*Diminuer la taille de l'entete*/
 .entete{
     display: flex;
-    border: 2px solid red;
     justify-content: space-between;
 }
 
    .logo{
         width:35%;
-        height: auto
-        border: 1px solid green;
+        height: min-content;
     }
 
     .slogan{
-        font-size: 1.3rem;
-        justify-self: right;
-        border: 1px solid purple;
-
+        font-size: 1.2rem;
     }
-
 }
