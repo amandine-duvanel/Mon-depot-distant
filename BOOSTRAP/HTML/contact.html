@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/jpg" href="images/jarditou_html_zip/images/jarditou_logo_brouette.jpg">
+    <link rel="stylesheet" href="../style.css"> 
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="../mobile.css">
+
+
+</head>
+<body>
+    <header class="entete">
+        <img src="images/jarditou_html_zip/images/jarditou_logo.jpg" class="logo" alt="logo Jarditou" title="logo Jarditou" height="60" width="200" ></span>
+     <p class="slogan">Tout le jardin </p> 
+     </header>
+
+<!-- liens de navigation à travers les pages -->
+
+<nav>
+    <ul>
+        <li><a href="index.html" title="Accueil">Accueil</a></li> 
+        <li><a href="tableau.html" title="Tableau">Tableau</a></li>
+        <li><a href="contact.html" title="Contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- image promo -->
+
+<img src="images/jarditou_html_zip/images/promotion.jpg" alt="Promotion lames de terrasse" class="promo">
+
+<!-- formulaire -->
+
+<section>
+    <header><h1>Contact</h1></header>
+    <hr>
+    *Ces zones sont obligatoires
+    <br> <br>
+    <form action="http://bienvu.net/script.php" method="POST" id="formulaire_contact"> 
+    <fieldset>
+        <legend>Vos coordonnées</legend>
+         <label for="nom">votre nom*:</label>
+         <input type="text" name="nom" id="nom"required title="Entrez votre nom" ><br>
+        
+         <label for="prénom">votre prénom*:</label>
+         <input type="text" name="prénom" id="prénom" required title="Entrez votre prénom" ><br>
+            <br>
+    
+         <label for="sexe">Sexe*:</label> 
+
+         <input type="radio" name="sexe" value="Féminin" required title="veuillez rensiegner votre sexe" selected> Féminin 
+         <input type="radio" name="sexe" value="Masculin"required title="veuillez rensiegner votre sexe" > Masculin 
+            <br>
+            <br>
+
+        <label for="date de naissance">Date de naissance*:</label>
+        <input type="date" name="date de naissance" id="date de naissance"required title="Veuillez renseigner votre date de naissance" ><br>
+    
+        <label for="code postal">Code postal*:</label>
+        <input type="text" name="code postal" id="code postal" required  ><br>
+   
+        <!-- Je n'arrive pas à faire en sorte que le formulaire bloque s'il y a plus ou moins de 5 chiffres ici -->
+        <!-- J'ai essayé d'utiliser Pattern, minlenght et maxlenght, ça bloquait même avec 5 chiffres -->
+    
+        <label for="adresse">Adresse:</label>
+        <input type="text" name="adresse" id="adresse" ><br>
+    
+        <label for="ville">Ville:</label>
+        <input type="text" name="ville" id="ville" ><br>
+    
+        <label for="email">Email*:</label>
+        <input type="email"placeholder="dave.loper@afpa.fr" name="email" required title="Veuillez rensiegner votre adresse Email"> <br>
+    
+    </fieldset>
+    
+                <br>
+    
+    <fieldset>
+            <legend>Votre demande</legend>
+                <label for="sujet">Sujet*:</label> 
+                <select id="sujet" name="Sujet" size="1"required>
+                    <option value="" selected disabled >Veuillez sélectionner un sujet </option>
+                    <option value="Mes commandes">Mes commandes</option>
+                    <option value="Question">Question sur un produit</option>
+                    <option value="Réclamation">Réclamation</option>
+                    <option value="Autres">Autres<selected></option>
+                </select>
+        <br>
+                <label for="Question">Votre question*:</label>
+                <textarea name="question" rows="3" required></textarea>
+    </fieldset> 
+    <br>
+    <input type="checkbox" name="Traitement informatique" value="oui" required>
+    *J'accepte le traitement informatique de ce formulaire <br>
+    <br>
+    
+    <!-- boutons pour envoyer ou annuler la saisie -->
+
+    <input type="submit" value="Envoyer" /> 
+    <input type="reset" value="Annuler"/>
+    
+    </form>
+    <hr>
+</section>
+
+<footer>
+    <ul>
+        <li><a href="Mentions légales.html" title="Mentions légales">Mentions légales</a></li>
+        <li><a href="Horaires.html" title="Nos horaires">Nos horaires</a></li>
+        <li><a href="Plan du site.html" title="Plan du site">Plan du site</a></li>
+    </ul>
+</footer>
+
+    
+</body>
+</html>
