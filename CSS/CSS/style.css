@@ -24,8 +24,6 @@ article {
 
 header{
     display: flex;
-    margin: 1px solid white;
-  
 }
 
 img.logo{
@@ -98,3 +96,7 @@ section.container{
     hr{
         width: 100%;
         }
+
+
+/*Tableau scrollable*/
+#container_tableau  { overflow-x:auto; }        
