@@ -1,20 +1,27 @@
-// le nombre de voyelle dans 1 mot
-// on donne une variable au mot, et une variable qui va compter le nb de voyelles
-//1 passage = 1 lettre, comptée ou non
+//2 fonctions à créer
+//produit(x, y) qui retourne le produit des 2 variables x, y passées en paramètre.
+//afficheImg(image) qui affiche l'image passée en paramètre. ( Le paramètre image corresond au chemin de votre image )
 
-//déclaration des variables
-var mot=prompt("Veuillez saisir un mot")
-var voy=0
+//on demande un nombre, puis son multiplicateur
+//on affiche le cube et le produit, avec l'image papillon
 
-//boucle
+X = prompt("Entrez un nombre");
+Y = prompt("Entrez un mulitplicateur");
 
-for(var i=0;i<mot.length; i=i+1)
-{
-    //si le mot contient les voyelles
-    if (mot[i]=='a' || mot[i]=='e' || mot[i]=='i' || mot[i]=='o' || mot[i]=='u' || mot[i]=='y')
-    {
-        voy = voy + 1;
-    }
+var resultat1;
+var resultat2;
+
+function afficheImg(src){
+    document.write(src);
 }
-document.write("Mot saisi: " + mot + "</br>")
-document.write("Nombre de voyelles dans le mot saisi : "+voy);
+afficheImg("<img src='papillon.jpg'>");
+
+function cube(X){
+    resultat1 = X*X*X;
+    document.write(resultat1);
+}
+
+//function cube(X,Y){
+
+//    resultat1 = X*X*X;
+//}
