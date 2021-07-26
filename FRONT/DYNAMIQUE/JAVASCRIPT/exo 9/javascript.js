@@ -1,27 +1,19 @@
-//2 fonctions à créer
-//produit(x, y) qui retourne le produit des 2 variables x, y passées en paramètre.
-//afficheImg(image) qui affiche l'image passée en paramètre. ( Le paramètre image corresond au chemin de votre image )
+var mot1 = prompt("Veuillez entrer un mot");
+var mot2 =prompt("Veuillez entrer un mot");
+var mot2= prompt("Veuillez entrer un mot");
+var mot4 = prompt("Veuillez entrer un mot");
+var mot5 = prompt("Veuillez entrer un mot");
+n = prompt("veuillez entrer un chiffre de 1 à 5");
 
-//on demande un nombre, puis son multiplicateur
-//on affiche le cube et le produit, avec l'image papillon
+function strtok(str1,n){
+    str1= mot1 + mot2 + mot3 + mot4 + mot5;
+    n1=mot1;
+    n2=mot2;
+    n3=mot3;
+    n4=mot4;
+    n5=mot5;
 
-X = prompt("Entrez un nombre");
-Y = prompt("Entrez un mulitplicateur");
-
-var resultat1;
-var resultat2;
-
-function afficheImg(src){
-    document.write(src);
-}
-afficheImg("<img src='papillon.jpg'>");
-
-function cube(X){
-    resultat1 = X*X*X;
-    document.write(resultat1);
+    n = prompt("veuillez entrer un chiffre de 1 à 5");
 }
 
-//function cube(X,Y){
-
-//    resultat1 = X*X*X;
-//}
+console.log("le mot N° " + n + "est : ");
