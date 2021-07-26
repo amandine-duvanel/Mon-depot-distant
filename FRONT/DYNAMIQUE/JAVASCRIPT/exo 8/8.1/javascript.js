@@ -10,7 +10,7 @@ console.log("les prénoms en folie")
 
 do
 {
-    var prenom=prompt("Saisissez le prénom N°1\n Ou Clic sur Annuler pour arrêter la saisie.");
+    var prenom=prompt("Saisissez le prénom N°" + i +"\n Ou Clic sur Annuler pour arrêter la saisie.");
     i = i+1;
     console.log("vous avez rentré " + prenom);
 }

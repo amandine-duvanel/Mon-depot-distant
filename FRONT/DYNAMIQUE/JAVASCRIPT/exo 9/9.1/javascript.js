@@ -1,6 +1,7 @@
 //2 fonctions à créer
 //produit(x, y) qui retourne le produit des 2 variables x, y passées en paramètre.
-//afficheImg(image) qui affiche l'image passée en paramètre. ( Le paramètre image corresond au chemin de votre image )
+//afficheImg(image) qui affiche l'image passée en paramètre. 
+//( Le paramètre image corresond au chemin de votre image )
 
 //on demande un nombre, puis son multiplicateur
 //on affiche l'image papillon, le cube et le produit,  
