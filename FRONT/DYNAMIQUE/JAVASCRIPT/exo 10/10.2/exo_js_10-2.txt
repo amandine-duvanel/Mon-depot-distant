@@ -1,0 +1,100 @@
+// pgm qui cree un tableau d'une taille definit par l'utilisateur
+//l'utilisateur remplit ce tableau avec des chiffres
+// fonctions: creer le tab - afficher le tab - chercher un element a un certain index - afficher info sur le tab
+var tab;
+
+//bouton  pour  creer le tableau 
+var creerTab = document.getElementById("creerTableau");
+creerTab.addEventListener("click",CreerTableau);
+
+
+
+//bouton pour afficher les posts du tableau
+var getInt = document.getElementById("afficheTab");
+getInt.addEventListener("click",function(){
+                AfficheTab(tab) }); 
+
+//bouton pour rechercher un post a un certain index
+var getInt = document.getElementById("rechercheTab");
+getInt.addEventListener("click", function(){
+                RechercheTab(tab)});
+
+//bouton pour avoir les infos du tableau
+var getInt = document.getElementById("infoTab");
+getInt.addEventListener("click", function() {
+                InfoTab(tab)});
+
+
+// demande a l' utilisateur combien d'entrees contiendra le tableau
+function GetInteger(){
+    var size = prompt("nombre d' entrees dans le tableau?");
+    if( !isNaN(size) && (size > 0)){
+        return size;
+    } else return;
+}
+
+//return un tableau de la taille size
+function InitTab(taille){
+    var size = parseInt(taille);
+    if( !isNaN(size) && (size > 0)){
+       var tableau = new Array(size);
+        return tableau;
+    } else return;
+}
+//retourne l' element de tableau a la position index
+function RechercheTab(tableau){
+    var index = prompt("veuillez saisir l'index recherché");
+    if( !isNaN(index) && (index > 0) && (index <=tableau.length)){
+        alert("l element a l index " + index + "est\n" + tableau[index - 1]);
+    } else return;
+}
+
+//affiche le tableau
+function AfficheTab(tableau) {
+    //clear la div
+    var contenu = document.getElementById("contenu");
+    contenu.innerHTML = "";
+    for( el in tableau){
+        var newP = document.createElement("p");
+        var text = document.createTextNode( tableau[el]);
+        newP.appendChild(text);
+       contenu.appendChild(newP);
+        
+    }
+}
+
+//saisie par l'utilisateur des postes qui iront dans le tableau
+function SaisieTab(tableau) {
+    var compteur = 0;
+    while(compteur < tableau.length){
+        var saisie = prompt("entrer une valeur");
+        tableau[compteur] = saisie;
+        compteur += 1;
+    } 
+}
+
+//affiche le le max et la moyenne des postes
+function InfoTab(tableau) {
+    var max = tableau[0];
+    var somme = 0 ;
+    for( el in tableau) {
+        somme += parseFloat(tableau[el]);
+       if(tableau[el] > max){
+       
+            max = tableau[el];
+        }
+    }
+    var moyenne = somme / tableau.length;
+    alert("le plus grand element du tableau est : " + max + "\n la moyenne du tableau est : " + moyenne);
+    
+}
+
+function CreerTableau(){
+    var taille = GetInteger();
+    if(taille) {
+        tab = InitTab(taille);
+        if(tab) {
+            SaisieTab(tab);
+        }
+    }
+}
