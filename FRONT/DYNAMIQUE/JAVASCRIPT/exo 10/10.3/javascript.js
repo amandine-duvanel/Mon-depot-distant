@@ -60,7 +60,6 @@ function tri(tableau){
                     tableau[i]=tableau[i+1];
                     tableau[i+1]=stock;
                     condition = true;
-
             }
         }
     }
