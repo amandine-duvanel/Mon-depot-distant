@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid ">
+
+        <div class="col-16 coordonnees m-10 " width = 30vw>
+            <form action="http://bienvu.net/script.php" method="POST" id="formulaire-contact" name="formulaire-contact">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <p class="text-danger h5">* Ces zones sont obligatoires pour envoyer le formulaire</p>                 
+                    <!--nom de la societe  -->
+                    <div class="form-row mb-3">
+                    <div class="col-3 col-lg-1"><label for="societe"> société:</label></div>
+                        <div class="col-8 col-lg-2"><input class="form-control" type="text" id="nom" name="nom"  title="entrez votre nom"></div>
+                        <div class="col-1 col-lg-2"><span class="text-danger text-alert h3 pl-3"> *</span></div>
+                    </div>
+            
+                    <!-- personne a contacter -->
+                    <div class="form-row mb-3">
+                        <div class="col-3 col-lg-1"><label for="nomContact">Personne à contacter  :</label></div>
+                        <div class="col-8 col-lg-2"><input class="form-control" type="text" id="nomContact" name="nomContact"  ></div>
+                        <div class="col-1 col-lg-2"><span class="text-danger text-alert h3 pl-3"> *</span></div>
+                    </div>
+            
+                    <!-- adresse societe -->
+                    <div class="form-row mb-3">
+                        <div class="col-3 col-lg-1"><label for="adresse">Adresse de l'entreprise  :</label></div>
+                        <div class="form-floating col8 col-lg-2">
+                            <textarea class="form-control"  id="adresse" ></textarea>
+                        </div>
+                        <!-- <div class="col-8 col-lg-2"><select class="form-control"  id="envTech" name="envTech" size="3" > -->
+
+                    </div>
+
+                    <!-- code postal -->
+                    <div class="form-row mb-3">
+                        <div class="col-3 col-lg-1"><label for="codePostal">code Postal :</label></div>
+                        <div class="col-8 col-lg-2"><input class="form-control" type="text" id="codePostal" name="codePostal"></div>
+                        <div class="col-1 col-lg-2"><span class="text-danger text-alert h3 pl-3"> *</span></div>
+                    </div>
+            
+                    <!--ville  -->
+                    <div class="form-row mb-3">
+                        <div class="col-3 col-lg-1"><label for="ville">Ville :</label></div>
+                        <div class="col-8 col-lg-2"><input class="form-control" type="text" id="ville" name="ville"></div>
+                        <div class="col-1 col-lg-2"><span class="text-danger text-alert h3 pl-3"> *</span></div>
+                    </div>
+            
+                    <!-- email -->
+                    <div class="form-row mb-3">
+                        <div class="col-3 col-lg-1"><label for="email">Email* :</label></div>
+                        <div class="col-8 col-lg-2"><input class="form-control" type="email" id="email" name="email"  title="entrez une adresse email valide"></div>
+                        <div class="col-1 col-lg-2"><span class="text-danger text-alert h3 pl-3"> *</span></div>
+                    </div>
+            
+                    <!-- telephone -->
+                    <div class="form-row mb-3">
+                        <div class="col-3 col-lg-1"><label for="tel">telephone :</label></div>
+                        <div class="col-8 col-lg-2"><input class="form-control" type="number" id="tel" name="tel" ></div>
+                    </div>
+            
+                    <!-- environnement tech du projet -->
+                    <div class="form-row mb-3">
+                        <div class="form-group col-4 col-lg-1">
+                            <label for="envTech" >Sélectionnez l'environnement technique du projet:</label>
+                            <div class=" form-floating mt-3 ">
+                                <select  class="form-select"   id="envTech" name="envTech" >
+                                    <option value="1">choisissez</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="col-7 col-lg-2">
+                            <select class="form-control" size="4"> 
+
+                            </select>
+                        </div>
+                    </div>
+                   <div class="form-row mb-3 ">
+                       <div class="form-group col11 col-lg-3 d-flex justify-content-center ">
+                           <input  class="btn  btn-outline-secondary mx-3 " type="button" id="envoieFormulaire" value="Envoyer">
+                           <input class="btn  btn-outline-secondary mx-3" type="reset" value="Effacer">
+                       </div>
+
+                   </div> 
+                </fieldset>
+            </form>        
+                     
+                 
+             
+        </div>
+    </div> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- javascript perso -->
+    <script src="valide-formulaire.js"></script>
+</body>
+</html>
