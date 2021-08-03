@@ -2,12 +2,12 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>Nombre magique</title>
+    <title>formulaire js</title>
   </head>
 
   <body>
    
-    <form action="" method="POST" name="formulr"  id="formulr">
+    <form action="" method="GET" name="formulr"  id="formulr">
 
       <fieldset>
         <legend>Vos coordonnées</legend>
@@ -16,10 +16,13 @@
         <!-- nom société -->
         <label for="nomSociete">Société : </label>
         <input name ="nomSociete" id="nomSociete" value=""> <br>
+        <span id="erreur1" ></span><br>
 
         <!-- personne à contacter -->
         <label for="pContact">Personne à contacter : </label>
         <input name="pContact" id="pContact" value=""> <br>
+        <span id="erreur2"></span><br>
+
 
        <!--Adresse de l'entreprise -->
        <label for="adrEntreprise">Adresse de l'entreprise : </label>
@@ -28,14 +31,20 @@
        <!--Code Postal  -->
        <label for="codePostal">Code Postal : </label>
        <input name="codePostal" id="codePostal" value="">  <br>
+       <span id="erreur3"></span><br>
+
 
        <!--Ville -->
        <label for="ville">Ville : </label>
        <input name="ville" id="ville" value="">  <br>
+       <span id="erreur4"></span><br>
+
        
        <!-- Email -->
        <label for="email">E-mail :</label>
        <input type="email" name="email" id="email"> <br>
+       <span id="erreur5"></span><br>
+
        
        <!--Téléphone -->
        <label for="telephone">Téléphone : </label>
@@ -60,9 +69,14 @@
             <option value="Autres">Autres...</option>
         </select> <br>
 
-<!-- Ajouter la zone de texte. faut-il la lier au "select" ? -->
+        <textarea name="Text-projet" id="text_project"></textarea>
 
+<!-- Ajouter la zone de texte. faut-il la lier au "select" ? -->
     </fieldset>
+
+    <input type="submit" value="Envoyer" id="bouton_envoi">
+    <input type="reset" value="Effacer">
+
 </form>
 
 
