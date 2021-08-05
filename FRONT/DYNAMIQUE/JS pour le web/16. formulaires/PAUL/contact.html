@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+<<<<<<< HEAD
+    <form action="destination.php" method="post" method="post" id="form" name="formulaire">
+        <h3>Vos Coordonnées:</h3>
+        <h4 style="color: brown">* Ces zones sont obligatoires pour entrer le formulaire.</h4>
+        <label for="societe">Société : <input type="text" name="Société" id="societe">*<br><br>
+            <label for="contact">Personne à contacter : <input type="text" name="contact" id="contact">*<br><br>
+                <label for="adresse">Adresse de l'Entreprise : <textarea name="commentaire" id="adresse" rows="2"
+                        cols="25"></textarea><br><br>
+                    <label for="code_postal"></label>Code Postal : <input type="text" name="code_postal"
+                        id="code_postal">*<br><br>
+                    <label for="ville"></label>Ville : <input type="text" name="ville" id="ville">*<br><br>
+                    <label for="email"></label>Email : <input type="text" name="email" id="email">*<br><br>
+                    <label for="telephone"></label>Telephone : <input type="text" name="telephone" id="telephone"><br>
+                    <label for="environnement">Sélectionnez l'environnement technique du projet : </label><textarea
+                        name="commentaire" id="environnement" rows="3" cols="40"></textarea><br><br>
+                    <label for="projet"></label>
+                    <select id="projet">
+                        <option value="" selected disabled>Choisissez</option>
+                        <option value="Access">Acces</option>
+                        <option value="Java">Java</option>
+                        <option value="Delphi">Delphi</option>
+                        <option value="Windev">Windev</option>
+                        <option value="Visual Basic">Visual Basic</option>
+                        <option value="Power Builder">Power Builder</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Intranet">Intranet</option>
+                        <option value="Windows NT">Windows NT</option>
+                        <option value="Unix">Unix</option>
+                        <option value="SQL Server">SQL Server</option>
+                        <option value="Oracle">Oracle</option>
+                        <option value="Autres">Autres...</option>
+                    </select><br><br><br>
+                    <input type="submit" id="submit" value="Envoyer">
+                    <input type="reset" value="Effacer">
+    </form>
+
+    <p style="color: red;" id="error"></p>
+
+    
+    <script src="Formulaire.js"></script>
+=======
+
+   <form action="http://bienvu.net/script.php" method="POST" id="form" name="coordonees">
+
+      <h1>Vos coordonnées :</h1>
+      <h3 style="color: brown;">* Ces zones sont obligatoires pour envoyer le formulaire.</h3>
+         
+      
+         
+            <label for="societe">Société : </label>
+            <input type="text" name="Societé" id="societe">*<br>
+            <label for="contact">Personne à contacter : </label>
+            <input type="text" name="Contact" id="contact">*<br>
+            <label for="adresse">Adresse de l'entreprise : </label>
+            <textarea name="Adresse" cols="25" rows="3" id="adresse"></textarea><br>
+            <label for="code_postal">Code Postal : </label>
+            <input type="text" id="code_postal" name="Code-Postal">*<br>
+            <label for="ville" >Ville : </label>
+            <input type="text" name="Ville" id="ville">*<br> 
+            <label for="mail">E-mail : </label>
+            <input type="text" name="Email" id="mail">*<br>
+            <label for="telephone">Téléphone : </label>
+            <input type="text" name="Telephone" id="telephone" ><br>
+               <label for="tech">Sélectionnez l'environnemet technique du projet : </label>
+               <br>
+               <br>
+               <select name="Selection-Projet" id="tech" onchange="affich_project();">
+                  <option value="selectionnerunsujet" selected disabled="">Choisissez</option>
+                  <option value="Acess"> Acess </option>
+                  <option value="Java"> Java </option>
+                  <option value="Delphi"> Delphi </option>
+                  <option value="Windev"> Windev </option>
+                  <option value="Visual-Basic"> Visual Basic </option>
+                  <option value="Power-Builder"> Power Builder </option>
+                  <option value="Internet"> Internet </option>
+                  <option value="Intranet"> Intranet </option> 
+                  <option value="Windows-NT"> Windows NT </option>
+                  <option value="Unix"> Unix </option>
+                  <option value="SQL-Server"> SQL Server </option>
+                  <option value="Oracle"> Oracle </option>
+                  <option value="Autres"> Autres... </option>
+               </select>
+            
+        <textarea name="Text-projet" cols="20" rows="5" id="text_project"></textarea>
+      <input type="submit" value="Envoyer">
+      <input type="reset" value="Effacer">
+
+   </form>
+
+   <p style="color: red;" id="erreur"></p>
+
+   <script src="javascript .js"></script>
+
+</body>
+
+</html>

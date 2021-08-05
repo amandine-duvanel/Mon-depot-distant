@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <form action="http://bienvu.net/script.php" method="POST" id="formulaire" name="coordonees">
+
+      <h1>Vos coordonnées :</h1>
+      <h3 style="color: red;">* Ces zones sont obligatoires pour envoyer le formulaire.</h3>
+         
+      <table>
+         <tr>
+            <th style="text-align: start;"><label for="société">Société : </label></th>
+            <td style="color: red;"><input type="text" name="Societé" id="societe"> * </td>
+         </tr>
+         <tr>
+            <th style="text-align: start;"><label for="contact">Personne à contacter : </label></th>
+            <td style="color: red;"><input type="text" name="Contact" id="contact"> * </td>
+         </tr>
+         <tr>
+            <th style="text-align: start;"><label for="adresse">Adresse de l'entreprise : </label></th>
+            <td><textarea name="Adresse" cols="25" rows="5" id="adresse"></textarea></td>
+         </tr>
+         <tr>
+            <th style="text-align: start;"><label for="codepostal">Code Postal : </label></th>
+            <td style="color: red;"><input type="text" id="cp" name="Code-Postal"> * </td>
+         </tr>
+         <tr>
+            <th style="text-align: start;"><label for="ville" >Ville : </label></th>
+            <td style="color: red;"><input type="text" name="Ville" id="ville"> * </td>
+         </tr>
+         <tr>
+            <th style="text-align: start;"><label for="email">E-mail : </label></th>
+            <td style="color: red;"><input type="text" name="Email" id="email"> * </td>
+         </tr>
+         <tr>
+            <th style="text-align: start;"><label for="telephone">Téléphone : </label></th>
+            <td><input type="text" name="Telephone" id="telephone" ></td>
+         </tr>
+         <tr>
+            <th style="text-align: start;">
+               <label for="projet">Sélectionnez l'environnemet technique du projet : </label>
+               <br>
+               <br>
+               <select name="Selection-Projet" id="projet" onchange="affiche_projet();">
+                  <option value="selectionnerunsujet" selected disabled="">Choisissez</option>
+                  <option value="Acess"> Acess </option>
+                  <option value="Java"> Java </option>
+                  <option value="Delphi"> Delphi </option>
+                  <option value="Windev"> Windev </option>
+                  <option value="Visual-Basic"> Visual Basic </option>
+                  <option value="Power-Builder"> Power Builder </option>
+                  <option value="Internet"> Internet </option>
+                  <option value="Intranet"> Intranet </option> 
+                  <option value="Windows-NT"> Windows NT </option>
+                  <option value="Unix"> Unix </option>
+                  <option value="SQL-Server"> SQL Server </option>
+                  <option value="Oracle"> Oracle </option>
+                  <option value="Autres"> Autres... </option>
+               </select>
+            </th>
+            <td style="text-align: start;"><textarea name="Text-projet" cols="20" rows="5" id="text_projet"></textarea>
+            </td>
+         </tr>
+      </table>
+
+      <input type="submit" value="Envoyer">
+      <input type="reset" value="Effacer">
+
+   </form>
+
+   <p style="color: red;" id="erreur"></p>
+
+   <script src="javascript.16.js"></script>
+
+</body>
+
+</html>
