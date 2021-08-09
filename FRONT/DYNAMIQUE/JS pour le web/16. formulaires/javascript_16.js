@@ -43,11 +43,11 @@ function valider(event) {
         erreur = "Entrez le nom de la societé s.v.p. !";
     }
 
-    // si erreur, n'envoie pas les infos
     else {
         erreur = "c'est envoyé !";
         document.getElementById("erreur").textContent = erreur;
     }
+        // si erreur, n'envoie pas les infos
     if (erreur) {
         event.preventDefault();
         document.getElementById("erreur").innerHTML = erreur;
