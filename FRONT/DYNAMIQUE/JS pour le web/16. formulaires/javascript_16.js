@@ -44,12 +44,13 @@ function valider(event) {
     }
 
     // si erreur, n'envoie pas les infos
+    else {
+        erreur = "c'est envoyé !";
+        document.getElementById("erreur").textContent = erreur;
+    }
     if (erreur) {
         event.preventDefault();
         document.getElementById("erreur").innerHTML = erreur;
-    // } else {
-    //     erreur = "c'est envoyé !";
-    //     document.getElementById("erreur").textContent = erreur;
     }
 }
 
