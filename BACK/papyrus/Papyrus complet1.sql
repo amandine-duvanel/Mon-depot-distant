@@ -39,4 +39,24 @@ where MONTH(datcom) = 3 or month(datcom)=4;
 
  -- 7- Quelles sont les commandes du jour qui ont des obversations particulières?
 -- numcom,obscom,datcom,
-select 
+select numcom,obscom,datcom,numfou from entcom
+where obscom like "commande%";
+
+--8 Lister le total de chaque commande par total décroissant (Affichage numéro de commande et total)
+-- total = qtecde * priuni , numcom
+select numcom, (qtecde*priuni) as total_cmd from ligcom
+order by total_cmd desc
+
+--9 Lister les commandes dont le total est supérieur à 10 000€; on exclura dans le calcul du total les articles commandés en quantité supérieure ou égale à 1000.(Affichage numéro de commande et total)
+-- numcom, total_cmd 
+select numcom,qtecde,(qtecde*priuni) as total_cmd from ligcom
+where (qtecde*priuni) >10000 and qtecde<1000
+order by total_cmd desc;
+
+-- 10 Lister les commandes par nom fournisseur (Afficher le nom du fournisseur, le numéro de commande et la date)
+select nomfou,numcom,datcom from fournis
+NATURAL JOIN entcom
+group by nomfou,numcom;
+
+-- 11 Sortir les produits des commandes ayant le mot "urgent' en observation?
+-- (Afficher le numéro de commande, le nom du fournisseur, le libellé du produit et le sous total= quantité commandée * Prix unitaire)
