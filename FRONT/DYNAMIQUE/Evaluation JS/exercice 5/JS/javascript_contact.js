@@ -68,6 +68,7 @@ function valider(event) {
     // validation code postal
     if(codePostal.value.length != 5 || isNaN(codePostal.value)) {
         document.getElementById("erreur5").innerHTML = "Entrez le code postal sur 5 chiffres s.v.p. !.";
+        event.preventDefault();
     } else{
         document.getElementById("erreur5+").innerHTML = "C'est valide";
     }
